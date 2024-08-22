@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    
+    <h2> Copia x Referencia</h2>
+    
+    <script>
+        console.log('=== Copiando objetos com Spread Operator') 
+        const original = {
+            a: 1,
+            b: 2
+        }
+
+        const copia = {...original} //spred operator
+        original.a = 0   //ñ altera a cópia
+        console.log(copia) 
+
+        console.log('=== Copiando objetos com Object.assign') 
+        const original2 = {
+            a: 10,
+            b: 20
+        }
+                                //(destino, origem)
+        const copia2 = Object.assign({}, original2)  
+        original2.a = 0 
+        console.log(copia2) 
+
+        console.log('=== Referencia um objeto ===')
+        const original3 = {
+            a: 40,
+            b: 50
+        }
+
+        //isso ñ é uma cópia, é uma referencia
+        const copia3 = original3
+        original3 = 1000
+        console.log(copia3) 
+        
+    </script>
+</body>
+</html>

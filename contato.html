@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/contato.css">
+</head>
+
+<body>
+    <header>
+
+        <nav>
+           <a href="index.html" target="_blank">
+              <h1><img src="assets/img/logo-header.png" alt="Logo Mundo Verde"></h1>
+           </a>
+           <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="produtos.html">Produtos</a></li>
+              <li><a href="contato.html">Contato</a></li>
+           </ul>
+  
+        </nav>
+     </header>
+ 
+     <main>
+
+        <div class="painel">
+
+        <div class="conteudo"> 
+            
+            <h2>CONTATO</h2>
+
+            <p>Se tiver alguma dúvida, sugestão ou interesse em algum de nossos produtos, 
+                converse com nossa equipe de atendimento!
+            </p>
+
+            <a href="https://api.whatsapp.com/send?phone=5542998710050">
+                Atendimento via whatsapp
+            </a>
+
+        </div>
+
+        </div>
+
+        <div class="container">
+
+            <form action="" method="post">
+
+                <!-- ver mobileinputtypes.com --> 
+                  <label for="Nome">Nome:</label>
+                  <input type="text" id="nome" name="nome" placeholder="nome completo" required>
+                
+
+                  <label for="Email">E-mail:</label>
+                  <input type="email" id="email" name="email" placeholder="email@dominio.com.br" required>
+                
+
+                  <label for="Telefone">Telefone:</label>
+                  <input type="tel" id="telefone" name="telefone" placeholder="(xx)xxxxx-xxxx" required>
+
+                  <label for="mensagem">Mensagem:</label>
+                  <textarea name="mensagem" id="mensagem" cols="70" rows="0"></textarea>
+
+                  <!-- tag semnantica para substituir div -->
+                  <fieldsset>
+                    <legend>Como prefere nosso contato?</legend>
+                         
+                        <label>
+                        <input type="radio" name="contato" value="whatsapp">
+                         Whatsapp
+                        </label>
+
+                        <label>
+                        <input type="radio" name="contato" value="telefone">
+                         Telefone
+                        </label>
+
+                        <label>
+                        <input type="radio" name="contato" value="email" checked>
+                         E-mail
+                        </label>
+
+                  </fieldsset>
+
+                  <fieldset>
+                    <legend>Produtos que tnho mais interesse</legend>
+                    <select>
+                        <option>Cereais</option>
+                        <option>Suplementos</option>
+                        <option>Temperos</option>
+                    </select>
+                  </fieldset>
+
+                  <label>
+                    <input type="checkbox" checked>
+                    Quero receber ofertas por e-mail
+                  </label>
+
+                  <button type="submit">Enviar Dados</button>
+            </form>
+        </div>
+
+     </main>
+
+     <footer>
+        <img src="assets/img/logo-rodape.png" alt="Logo Mundo Verde">
+        <p>&#169;Copyright Mundo Verde</p>
+     </footer>
+</body>
+</html>
